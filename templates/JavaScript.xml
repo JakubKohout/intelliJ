@@ -1,0 +1,41 @@
+<templateSet group="JavaScript">
+  <template name="im" value="import $PROPERTY$ from '$PACKAGE_NAME$';  " description="Import" toReformat="false" toShortenFQNames="true">
+    <variable name="PROPERTY" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="PACKAGE_NAME" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="JAVA_SCRIPT" value="true" />
+    </context>
+  </template>
+  <template name="imm" value="import * as $ALIAS$ from '$PACKAGE_NAME$';  " description="Import multiple" toReformat="false" toShortenFQNames="true">
+    <variable name="ALIAS" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="PACKAGE_NAME" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="JAVA_SCRIPT" value="true" />
+    </context>
+  </template>
+  <template name="f" value="const $FUNCTION_NAME$ = ($PARAMETERS$): $RETURN$ =&gt; {&#10;$CONTENT$&#10;}" description="Function" toReformat="false" toShortenFQNames="true">
+    <variable name="FUNCTION_NAME" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="PARAMETERS" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="RETURN" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="CONTENT" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="JAVA_SCRIPT" value="true" />
+    </context>
+  </template>
+  <template name="af" value="const $FUNCTION_NAME$ = async ($PARAMETERS$): $RETURN$ =&gt; {&#10;$CONTENT$&#10;}" description="Async function" toReformat="false" toShortenFQNames="true">
+    <variable name="FUNCTION_NAME" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="PARAMETERS" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="RETURN" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="CONTENT" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="JAVA_SCRIPT" value="true" />
+    </context>
+  </template>
+  <template name="grows" value="const rows = await connection.getRows(SQL`&#10;        $QUERY$`&#10;    );&#10;&#10;    return rows.map((row: Row) =&gt; row.$QUERY_FIELD$);" description="Get Rows" toReformat="false" toShortenFQNames="true">
+    <variable name="QUERY" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="QUERY_FIELD" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="JAVA_SCRIPT" value="true" />
+    </context>
+  </template>
+</templateSet>
