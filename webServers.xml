@@ -1,0 +1,9 @@
+<application>
+  <component name="WebServers">
+    <option name="servers">
+      <webServer id="8feb3624-01c9-4f80-b1d5-25ee4d1c32ce" name="shipping-rates-api.local" url="http://shipping-rates-api.local">
+        <fileTransfer accessType="LOCAL" />
+      </webServer>
+    </option>
+  </component>
+</application>
